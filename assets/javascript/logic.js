@@ -136,5 +136,17 @@ $(document).ready(function() {
         playerBox.append(rock, paper, scissors);
       }
     });
-  });
+  }).on('click', ".content-btn", function(event){
+    event.preventDefault();
+
+    var target = event.target;
+  
+    console.log("target id: ", target.id);
+
+    var child = database.ref('players/' + playerNumber);
+
+    child.child('choice').set(target.id);
+
+
+  })
 });
