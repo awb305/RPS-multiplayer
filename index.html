@@ -1,0 +1,78 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Put your CSS reset here! -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Put your stylesheet here! -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>title</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center row-1">
+            <div class="col-lg-10">
+                <h1>Rock, Paper, Scissors</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center row-2">
+            <div class="col-lg-10" id="player-info">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="player-input" placeholder="[player name]">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" id="player-button" type="button">Let's Play!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center row-3">
+            <div class="col-sm-3 content-box">
+                <div class="card">
+                    <div class="card-body" id="player-1-box">
+                        <h6 class="card-text">Waiting for Player 1</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 content-box">
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-text">Rock</h6>
+                        <h6 class="card-text">Rock</h6>
+                        <h6 class="card-text">Rock</h6>
+                        <h6 class="card-text">Rock</h6>
+                        <h6 class="card-text">Rock</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 content-box">
+                <div class="card">
+                    <div class="card-body" id="player-2-box">
+                        <h6 class="card-text">Waiting for Player 2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-2"></div>
+            <div class="col col-3"></div>
+        </div>
+        <div class="row justify-content-center row-4">
+            <div class="col-lg-8" id="chatbox"></div>
+        </div>
+    </div>
+
+
+        <!-- jQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Put your javascript files here  -->
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <script src="assets/javascript/logic.js"></script>
+
+</body>
+
+</html>
