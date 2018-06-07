@@ -20,3 +20,11 @@ h1, h3{
     height: 20rem;
     border-radius: 3rem;
 }
+
+.card-turn{
+    background: lightgreen;
+}
+
+.card-not-turn{
+    background: white;
+}
